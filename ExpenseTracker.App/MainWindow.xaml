@@ -6,6 +6,7 @@
     xmlns:local="clr-namespace:ExpenseTracker"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:view="clr-namespace:ExpenseTracker.View"
+    xmlns:wpf="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
     Title="Expense Tracker"
     Width="1720"
     Height="1000"
@@ -27,6 +28,9 @@
         <KeyBinding Gesture="Ctrl+S" Command="{Binding SaveExpenseCommand}"></KeyBinding>
     </Window.InputBindings>
     <Grid Margin="5">
+        <wpf:WebView2 Name="WebView2" Source="https://telerik.com">
+        </wpf:WebView2>
         <view:VariableExpenseView DataContext="{Binding VariableExpenseViewModel}" />
     </Grid>
+
 </Window>
