@@ -1,0 +1,150 @@
+{
+  "Name": "debug_data_multi",
+  "Description": "debug",
+  "CycleEndDate": "2023-08-02T00:00:00",
+  "EndDate": "Wednesday, 2 August 2023",
+  "Budget": 2000.0,
+  "DataCurrency": {
+    "Code": "EUR",
+    "Name": "Euro",
+    "Symbol": "€"
+  },
+  "Currency": "en-DE",
+  "CurrencySymbol": "€",
+  "Entries": [
+    {
+      "Description": "Sample",
+      "Amount": 80.05,
+      "OriginalAmount": 4900.0,
+      "Category": null,
+      "PaymentChannel": "Citibank",
+      "ExpenseCategory": "Food",
+      "Comments": null,
+      "Currency": {
+        "Code": "PHP",
+        "Name": "Philippine Peso",
+        "Symbol": "₱"
+      }
+    },
+    {
+      "Description": "Sample - PHP",
+      "Amount": 49.09,
+      "OriginalAmount": 3005.0,
+      "Category": null,
+      "PaymentChannel": "BPI Credit",
+      "ExpenseCategory": "Utilities",
+      "Comments": null,
+      "Currency": {
+        "Code": "PHP",
+        "Name": "Philippine Peso",
+        "Symbol": "₱"
+      }
+    },
+    {
+      "Description": "tesing other php",
+      "Amount": 49.01,
+      "OriginalAmount": 3000.0,
+      "Category": null,
+      "PaymentChannel": "Citibank",
+      "ExpenseCategory": "Subscriptions",
+      "Comments": "test2",
+      "Currency": {
+        "Code": "PHP",
+        "Name": "Philippine Piso",
+        "Symbol": "₱"
+      }
+    },
+    {
+      "Description": "testing php",
+      "Amount": 0.16,
+      "OriginalAmount": 10.0,
+      "Category": null,
+      "PaymentChannel": "BPI-Car",
+      "ExpenseCategory": "Food",
+      "Comments": null,
+      "Currency": {
+        "Code": "PHP",
+        "Name": "Philippine Piso",
+        "Symbol": "₱"
+      }
+    }
+  ],
+  "Report": {
+    "ExpenseCategoryReportCounter": {
+      "Subscriptions": 1,
+      "Food": 1
+    },
+    "TotalAmount": 213.95,
+    "Savings": 1786.05,
+    "UnPaidAmount": 213.95,
+    "PaidAmount": 0.0,
+    "Completed": false,
+    "CategoryReports": [
+      {
+        "PaymentChannel": "Citibank",
+        "Amount": 50.15,
+        "Comments": null,
+        "Paid": false,
+        "PartialPayment": 0.0,
+        "OutstandingBalance": 50.15
+      },
+      {
+        "PaymentChannel": "BPI-Car",
+        "Amount": 163.8,
+        "Comments": null,
+        "Paid": false,
+        "PartialPayment": 0.0,
+        "OutstandingBalance": 163.8
+      }
+    ],
+    "SelectedReport": null,
+    "DataCurrency": {
+      "Code": "EUR",
+      "Name": "Euro",
+      "Symbol": "€"
+    },
+    "CurrencySymbol": "€",
+    "ReportChartData": [
+      {
+        "Key": "Citibank",
+        "Value": 50
+      },
+      {
+        "Key": "BPI-Car",
+        "Value": 164
+      }
+    ],
+    "ExpenseCategoryChartData": [
+      {
+        "Key": "Subscriptions",
+        "Value": 1
+      },
+      {
+        "Key": "Food",
+        "Value": 1
+      }
+    ],
+    "CurrencyReport": [
+      {
+        "Currency": {
+          "Code": "PHP",
+          "Name": "Philippine Piso",
+          "Symbol": "₱"
+        },
+        "Amount": 13000.0
+      }
+    ],
+    "AltCurrencyBreakdown": [
+      {
+        "CurrencyCode": "PHP",
+        "PaymentChannel": "Citibank",
+        "Amount": 3000.0
+      },
+      {
+        "CurrencyCode": "PHP",
+        "PaymentChannel": "BPI-Car",
+        "Amount": 10000.0
+      }
+    ]
+  }
+}
