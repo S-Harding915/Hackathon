@@ -271,7 +271,7 @@
                         Style="{StaticResource TextBlockStyle.Header2.Bold}"
                         Text="Currency Converter" />
                     <wpf:WebView2 Name="converter"
-                                  Source="https://localhost:7066/converter" Width="450" Height="200"></wpf:WebView2>
+                                  Source="https://localhost:7066/converter" Width="450" Height="270"></wpf:WebView2>
                     <!--<currencyConverterControl:CurrencyConverterControl Margin="5" DataContext="{Binding ConverterUIViewModel}" />-->
 
                 </StackPanel>

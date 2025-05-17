@@ -4,7 +4,9 @@ using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Input;
 using System.Linq;
-
+using System.Net;
+using System.Net.Http;
+using System.Threading.Tasks;
 using CommunityToolkit.Mvvm.Input;
 
 using ExpenseTracker.Data;
@@ -22,6 +24,7 @@ namespace ExpenseTracker.View
     {
         private Timer _searchDelayTimer;
         private const int _searchDelayTimeout = 500;
+        private bool _serverReachable = false;
 
         private VariableExpenseViewModel _vm;
         private Window parentWindow = Application.Current.MainWindow;
