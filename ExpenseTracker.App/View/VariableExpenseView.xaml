@@ -8,6 +8,7 @@
     xmlns:local="clr-namespace:ExpenseTracker.View"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     xmlns:viewmodel="clr-namespace:ExpenseTracker.ViewModels"
+    xmlns:wpf="clr-namespace:Microsoft.Web.WebView2.Wpf;assembly=Microsoft.Web.WebView2.Wpf"
     x:Name="RootWindow"
     d:DataContext="{d:DesignInstance viewmodel:VariableExpenseViewModel,
                                      IsDesignTimeCreatable=True}"
@@ -269,7 +270,9 @@
                         FontWeight="Light"
                         Style="{StaticResource TextBlockStyle.Header2.Bold}"
                         Text="Currency Converter" />
-                    <currencyConverterControl:CurrencyConverterControl Margin="5" DataContext="{Binding ConverterUIViewModel}" />
+                    <wpf:WebView2 Name="converter"
+                                  Source="https://localhost:7066/converter" Width="450" Height="200"></wpf:WebView2>
+                    <!--<currencyConverterControl:CurrencyConverterControl Margin="5" DataContext="{Binding ConverterUIViewModel}" />-->
 
                 </StackPanel>
             </StackPanel>
